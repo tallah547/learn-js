@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <body>        
+        <button id="myBtn">Click Here!!</button>
+        <p id="demo"></p>
+        <script>
+            let x = 5;
+            let y = 7;
+            document.getElementById("myBtn").addEventListener("click",function() {myMath(x, y);
+            });
+            function myMath (x, y) {
+                document.getElementById("demo").innerHTML = x * y;
+            }
+        </script>
+    </body>
+</html>

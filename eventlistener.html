@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>Kelvin</h2>
+      
+        <button id="myBtn">Try it!!</button>
+        <p id="demo"></p>
+        <script>
+            var x = document.getElementById("myBtn");
+            x.addEventListener("click", displayDate);
+            x.addEventListener("mouseover", myFunction);
+            
+            function displayDate () {
+                document.getElementById("demo").innerHTML = "Hello there!!<br>";
+            }
+            function myFunction () {
+                document.getElementById("demo").innerHTML = "Welcome home!<br>";
+            }
+
+        </script>
+        
+    </body>
+</html>
