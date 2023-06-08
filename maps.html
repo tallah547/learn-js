@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<p id="demo"></p>
+
+<script>
+    // create Map
+    const fruits = new Map([
+        ["apples", 200],
+        ["mangoes", 400],
+        ["pineapples", 700]
+    ]);
+    document.getElementById("demo").innerHTML = fruits.get("pineapples");
+</script>

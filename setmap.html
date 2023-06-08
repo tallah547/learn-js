@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<p id="demo"></p>
+<script>
+    // create new map
+    const vehicles = new Map();
+
+    //setting values
+    vehicles.set("Harrier", 6000000);
+    vehicles.set("Ford", 7000000);
+    vehicles.set("Mercedes", 10000000);
+
+    document.getElementById("demo").innerHTML = vehicles.get("Harrier");
+
+</script>
