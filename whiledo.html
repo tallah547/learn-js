@@ -1,7 +1,10 @@
+<p id="demo"></p>
 <script>
-    let x = 0;
+    let i = 0;
+    let text = " ";
     do{
-        alert(i);
-        i++;
-    } while (x < 3);
+        text += "<br>" + i;
+        i = i + 2;
+    } while (i < 20);
+    document.getElementById("demo").innerHTML = text;
 </script>
