@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<input id="num" type="text">
+<button type="button" onclick="myInp()">Input</button>
+<p id="demo"></p>
+<script>
+    function myInp() {
+        const message = document.getElementById("demo");
+        message.innerHTML = " ";
+        let x = document.getElementById("num").value;
+        try {
+            if (x.trim() == "") throw "empty";
+            if(isNaN(x)) throw "Not a number";
+            x = Number(x);
+            if(x < 5) throw "too low";
+            if(x > 20)throw "too high";
+        }
+        catch(err) {
+            message.innerHTML = "Input is " + err;
+        }
+    }
+</script>
