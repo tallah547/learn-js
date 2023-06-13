@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<p id="demo"></p>
+<script>
+    class Car {
+        constructor(name, year, company){
+            this.name = name;
+            this.year = year;
+            this.company = company;
+        }
+    }
+    const car = new Car("Harrier", 2019, "Toyota");
+    const car1 = new Car("Hyundai", 2015, "Ford");
+    document.getElementById('demo').innerHTML =  car.name + " manufactured in the year " + car.year + " by " + car.company + " is my dream car" +"."; 
+</script>
