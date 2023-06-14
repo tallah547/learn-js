@@ -3,14 +3,14 @@
     <body>
         <h2>Kelvin</h2>
       
-        <button id="myBtn">Try it!!</button>
+        <button id="myBtn">Try It!!</button>
         <p id="demo"></p>
         <script>
             var x = document.getElementById("myBtn");
-            x.addEventListener("click", displayDate);
-            x.addEventListener("mouseover", myFunction);
+            x.addEventListener("click", myFunction);
+            x.addEventListener("mouseover", displayMessage);
             
-            function displayDate () {
+            function displayMessage () {
                 document.getElementById("demo").innerHTML = "Hello there!!<br>";
             }
             function myFunction () {
