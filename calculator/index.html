@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <table class="calculator">
+        <tr>
+            <td colspan="3" > <input class="display-box" type="text" id="number"  /></td>
+          
+        </tr>
+        <tr>
+            <td><input type="button" value="7" onclick="displayData('7')"/></td>
+            <td><input type="button" value="8" onclick="displayData('8')"/></td>
+            <td><input type="button" value="9" onclick="displayData('9')"/></td>
+            <td><input type="button" value="-" onclick="displayData('-')"/></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="4" onclick="displayData('4')"/></td>
+            <td><input type="button" value="5" onclick="displayData('5')"/></td>
+            <td><input type="button" value="6" onclick="displayData('6')"/></td>
+            <td><input type="button" value="+" onclick="displayData('+')"/></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="1" onclick="displayData('1')"/></td>
+            <td><input type="button" value="2" onclick="displayData('2')"/></td>
+            <td><input type="button" value="3" onclick="displayData('3')"/></td>
+            <td><input type="button" value="*" onclick="displayData('*')"/></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="/" onclick="displayData('/')"/></td>
+            <td><input type="button" value="0" onclick="displayData('0')"/></td>
+            <td><input type="button" value="." onclick="displayData('.')"/></td>
+            <td><input type="button" value="=" onclick="Answer()" id="equal" /></td>            
+        </tr>
+        <tr>
+            <td><input type="button" value="%" onclick="displayData('%')"/></td>
+            <td><input type="button" value="del" onclick="clearScreen()" id="btn" /></td>            
+            <td><input type="button" value="C" onclick="Delete()"/></td>
+        </tr>
+        <tr>
+            
+        </tr>
+    </table>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
