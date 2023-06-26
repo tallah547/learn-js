@@ -2,6 +2,11 @@
 <p id="demo"></p>
 <script>
     // arrays
+    let car = ""
     const cars = ["Harrier", "Volvo", "Mazda"];
-    document.getElementById("demo").innerHTML = cars[1];
+    for (let x =0;x < cars.length;x++){
+        car += cars[x] + ","
+    }
+
+    document.getElementById("demo").innerHTML = car;
 </script>
